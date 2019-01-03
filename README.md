@@ -2,20 +2,20 @@
 
 This is a compilation of vanilla js snippets for web developers. 
 
-  * [Convert IPv4 to IP Decimal](#convert-ipv4-to-ip-decimal)
-  * [Convert IP Decimal to IPv4](#convert-ip-decimal-to-ipv4)
+  * [Convert IPv4 to Decimal](#convert-ipv4-to-decimal)
+  * [Convert Decimal to IPv4](#convert-decimal-to-ipv4)
 
-## Convert IPv4 to IP Decimal
+## Convert IPv4 to Decimal
 
 ```js
 /**
- * Convert IPv4 to IP Decimal
+ * Convert IPv4 to Decimal
  * @param {String} ip - a String represents an IPv4
- * @returns IP decimal if the input is valid. Otherwise, it returns -1.
+ * @returns a decimal if the input is valid. Otherwise, it returns -1.
  */
 function convertIPv4toDecimal(ip) {
   // Simply validate input as IPv4
-  const ipv4RegEx = /^(\d{0,3}\.){3}(\d{0,3})$/;
+  const ipv4RegEx = /^(\d{1,3}\.){3}(\d{1,3})$/;
   const valid = ipv4RegEx.test(ip);
   if (!valid) {
     return -1;
@@ -39,12 +39,12 @@ function convertIPv4toDecimal(ip) {
 }
 ```
 
-## Convert IP Decimal to IPv4
+## Convert Decimal to IPv4
 
 ```js
 /**
- * Convert IP Decimal to IPv4
- * @param {Number} decimal - a Number represents an IP Decimal
+ * Convert Decimal to IPv4
+ * @param {Number} decimal - a Number represents a Decimal
  * @returns an IPv4 as String if the input is valid. 
  * Otherwise, it returns an empty string ("").
  */
