@@ -22,17 +22,17 @@ function convertIPv4toDecimal(ip) {
   }
 
   let ipDecimal = 0;
-  const dots = ip.split('.');
+  const octets = ip.split('.');
 
   for (let i = 0; i < 4; i++) {
-    const dot = Number(dots[i]);
+    const octet = Number(octets[i]);
 
     // make sure each value is between 0 and 255
-    if (dot > 255 || dot < 0) {
+    if (octet > 255 || octet < 0) {
       return -1;
     }
 
-    ipDecimal = ipDecimal * 256 + dot;
+    ipDecimal = ipDecimal * 256 + octet;
   }
 
   return ipDecimal;
