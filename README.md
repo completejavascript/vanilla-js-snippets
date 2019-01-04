@@ -49,7 +49,11 @@ function convertIPv4toDecimal(ip) {
  * Otherwise, it returns an empty string ("").
  */
 function convertDecimalToIPv4(decimal) {
-  if (typeof decimal !== "number" || decimal < 0) {
+  if (typeof decimal !== "number" || 
+      Number.isInteger(decimal) === false ||
+      decimal < 0 || 
+      decimal > 4294967295
+  ) {
     return "";
   }
 
