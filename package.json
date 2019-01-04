@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-js-snippets",
+  "version": "1.0.0",
+  "description": "A compilation of vanilla js snippets for web developers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/completejavascript/vanilla-js-snippets.git"
+  },
+  "author": "completejavascript",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/completejavascript/vanilla-js-snippets/issues"
+  },
+  "homepage": "https://github.com/completejavascript/vanilla-js-snippets#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
